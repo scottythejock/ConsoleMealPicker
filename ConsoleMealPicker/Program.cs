@@ -47,7 +47,7 @@ namespace ConsoleMealPicker
                 Console.WriteLine("--==[ " + selectedMeal + " ]==--");
                 Console.WriteLine(" ");
                 Console.WriteLine("Your suggested meal plan is as follows :");
-                for (int dayCount = 0, randNum = random.Next(0,11),randMeal = randNum; dayCount < dayOfWeek.Length; dayCount++, randNum = random.Next(0, 9), randMeal = randNum)
+                for (int dayCount = 0, randNum = random.Next(0,11),randMeal = randNum; dayCount < dayOfWeek.Length; dayCount++, randNum = random.Next(0, 11), randMeal = randNum)
                     Console.WriteLine(dayOfWeek[dayCount] + " - " + myMeal[randMeal]);
                 Console.WriteLine(" ");
                 Console.WriteLine("Continue? Press any key to continue, N or n to exit:");
